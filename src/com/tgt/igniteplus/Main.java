@@ -10,6 +10,7 @@ public class Main {
         Scanner in = new Scanner(System.in);
 
 
+
         do {
             System.out.println("Press the option (Menu):\n1.\tTo display all the Departments\n2.\tCreate a new Department\n3.\tDelete a Department\n4.\tDisplay all the Members as per Department\n5.\tCreate a Member and add the member to the department\n");
 
@@ -27,9 +28,9 @@ public class Main {
                     break;
 //                    case 4:teamMemberOpObject.displayMembersPerDepartment();
 //                        break;
-//                    case 5:
-//                        teamMemberOpObject.addMember();
-//                        break;
+                    case 5:
+                        department.addNewMember();
+                        break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + op);
             }
