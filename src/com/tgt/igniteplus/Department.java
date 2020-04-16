@@ -126,5 +126,18 @@ public class Department {
         }
         displayMembersPerDepartment();
     }
+    protected void searchMembersBySkill(){
+        System.out.println("Enter the skill : ");
+        String skill=in.nextLine();
+        for (String dept:departmentMembers.keySet()
+             ) {
+            for (IgniteMembers mem: departmentMembers.get(dept)
+                 ) {
+                if(mem.getSkillSet().contains(skill))
+                    System.out.println(dept+" ("+mem.toString()+")");
+            }
+        }
+
+    }
 
 }
