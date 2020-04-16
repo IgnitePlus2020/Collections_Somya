@@ -50,11 +50,9 @@ public class IgniteMembers {
 
     @Override
     public String toString() {
-        return "IgniteMembers{" +
-                "name='" + name + '\'' +
+        return "name='" + name + '\'' +
                 ", age=" + age +
                 ", college='" + college + '\'' +
-                ", skillSet=" + skillSet +
-                '}';
+                ", skillSet=" + skillSet ;
     }
 }

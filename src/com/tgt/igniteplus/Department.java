@@ -7,27 +7,42 @@ public class Department {
 
 
     // <deptName, IgniteMemberList>
-    Map<String,List<IgniteMembers>> mem = new HashMap<>();
+    HashMap<String,List<IgniteMembers>> departmentMembers = new HashMap<>();
     private ArrayList<String> departmentList =new ArrayList<>();
-    List<IgniteMembers> departmentMembersList=new LinkedList<>();
+
 
 
 
     protected void createDepartment(){
         System.out.println("enter department name : ");
-        departmentList.add(in.nextLine());
-
+        String dept=in.nextLine();
+        //to access dept by order
+        departmentList.add(dept);
+        departmentMembers.put(dept,null);
+//        System.out.println("status after addition");  displayDepartments();
     }
+
     protected void displayDepartments(){
+ //       System.out.println("-******************from arraylist******************************-");
+
         for (int i = 0; i <departmentList.size() ; i++) {
-            System.out.println((i+1)+". "+departmentList.get(i));
+            System.out.println(i+1+") "+departmentList.get(i));
         }
+//        System.out.println("----------------from hash map-------------------------------");
+//
+//        Set<Map.Entry<String,List<IgniteMembers>>> set=departmentMembers.entrySet();
+//        for (Map.Entry<String,List<IgniteMembers>> mem:set){
+//            System.out.println(mem.getKey()+" : "+ mem.getValue());
+//        }
 
     }
     public void deleteDepartment() {
-        System.out.println("Enter dept name : ");
-        departmentList.remove(in.nextLine());
-        displayDepartments();
+        System.out.println("Enter option to delete : ");
+        int delIndex=Integer.parseInt(in.nextLine());
+        String dep=departmentList.get(delIndex-1);
+        departmentList.remove(delIndex-1);
+        departmentMembers.remove(dep);
+       System.out.println("dept status after deletion");    displayDepartments();
     }
 
     protected void addNewMember(){
@@ -45,42 +60,62 @@ public class Department {
             member.setCollege(in.nextLine());
 
             System.out.print("Enter the SkillSet: ");
-            String temp;
+            String skill;
             while (in.hasNextLine()) {
-                temp = in.nextLine();
-                if (temp.isEmpty()) {
+                skill = in.nextLine();
+                if (skill.isEmpty()) {
                     member.setSkillSet(SkillSet);
                     break;
                 }
-                SkillSet.add(temp);
+                SkillSet.add(skill);
             }
 
-        System.out.println(member.toString());
+       // System.out.println(member.toString());
 
             //adding new member to a department
             System.out.println("Add the member to the following dept:\n");
             displayDepartments();
+
             //get the list of members in that department using key==dept name....then add to this list our new member
 
-/*nullPointerException
-        String dept=in.nextLine();
 
-           departmentMembersList=mem.get(dept);
-           departmentMembersList.add(member);
-        for(IgniteMembers i: mem.get(dept))
-            System.out.println(i.toString());
-*/
+        String dept=in.nextLine();
+        if(departmentMembers.get(dept)==null){
+            List<IgniteMembers> deptmember = new ArrayList<>();
+            deptmember.add(member);
+            //System.out.println(deptmember);
+            departmentMembers.put(dept,deptmember);
+        }
+        else departmentMembers.get(dept).add(member);
+
+
+       // displayMembersPerDepartment();
 
 
 
         }
 
 
+    protected void displayMembersPerDepartment(){
 
-    @Override
-    public String toString() {
-        return "Department{" +
-                "departmentList=" + departmentList +
-                '}';
+        System.out.println("----------------dept members-------------------------------");
+
+        Set<Map.Entry<String,List<IgniteMembers>>> set=departmentMembers.entrySet();
+        for (Map.Entry<String,List<IgniteMembers>> mem:set){
+            if(mem.getValue()==null)
+                System.out.println(mem.getKey()+" : "+"no members ");
+            else{
+                System.out.println(mem.getKey());
+                for (IgniteMembers member:mem.getValue()
+                     ) {
+                    System.out.println(member.toString());
+                }
+
+            }
+
+        }
+
+
     }
+
 }

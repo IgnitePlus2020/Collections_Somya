@@ -26,8 +26,8 @@ public class Main {
                 case 3:
                     department.deleteDepartment();
                     break;
-//                    case 4:teamMemberOpObject.displayMembersPerDepartment();
-//                        break;
+                    case 4:department.displayMembersPerDepartment();
+                        break;
                     case 5:
                         department.addNewMember();
                         break;
