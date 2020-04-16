@@ -11,8 +11,6 @@ public class Department {
     private ArrayList<String> departmentList =new ArrayList<>();
 
 
-
-
     protected void createDepartment(){
         System.out.println("enter department name : ");
         String dept=in.nextLine();
@@ -105,17 +103,28 @@ public class Department {
             if(mem.getValue()==null)
                 System.out.println(mem.getKey()+" : "+"no members ");
             else{
-                System.out.println(mem.getKey());
-                for (IgniteMembers member:mem.getValue()
-                     ) {
-                    System.out.println(member.toString());
-                }
-
+                    System.out.println(mem.getKey());
+                    for (IgniteMembers member:mem.getValue()
+                         ) {
+                        System.out.println(member.toString());
+                    }
             }
+        }
+    }
+
+    //add a new skill to skillSet of members of a particular department
+    protected void addSkillToDepartmentMembers(){
+        Set<String> SkillSet = new HashSet<>();
+        System.out.println("enter department name : ");
+        String dept=in.nextLine();
+        System.out.println("enter skill to be added : ");
+        String newSkill=in.nextLine();
+        for (IgniteMembers member:departmentMembers.get(dept)
+             ) {
+            member.getSkillSet().add(newSkill);
 
         }
-
-
+        displayMembersPerDepartment();
     }
 
 }
