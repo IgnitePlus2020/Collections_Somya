@@ -12,7 +12,9 @@ public class Main {
 
 
         do {
-            System.out.println("Press the option (Menu):\n1.\tTo display all the Departments\n2.\tCreate a new Department\n3.\tDelete a Department\n4.\tDisplay all the Members as per Department\n5.\tCreate a Member and add the member to the department\n6.\tAdd new skill to a department's members\n7.\tSearch members by skill\n");
+            System.out.println("----------------------------------------------------------");
+            System.out.println("Press the option (Menu):\n1.\tTo display all the Departments\n2.\tCreate a new Department\n3.\tDelete a Department\n4.\tDisplay all the Members as per Department\n5.\tCreate a Member and add the member to the department\n6.\tAdd new skill to a department's members\n7.\tSearch members by skill\n8.\tSwap dept of a member");
+            System.out.println("----------------------------------------------------------");
 
 
             int op = in.nextInt();
@@ -34,6 +36,9 @@ public class Main {
                 case  6: department.addSkillToDepartmentMembers();
                         break;
                 case  7: department.searchMembersBySkill();
+                    break;
+                case  8:
+                    System.out.println(department.swapDepartment());
                     break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + op);

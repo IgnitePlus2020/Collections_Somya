@@ -1,84 +1,116 @@
+"C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\lib\idea_rt.jar=63360:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\charsets.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\access-bridge-64.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\cldrdata.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\dnsns.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\jaccess.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\localedata.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\nashorn.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\sunec.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\sunjce_provider.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\sunmscapi.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\sunpkcs11.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\ext\zipfs.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\jce.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\jsse.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\management-agent.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\resources.jar;C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.242-1\jre\lib\rt.jar;C:\Users\SOMYA\IdeaProjects\Collections_Somya\out\production\Collections_Somya" com.tgt.igniteplus.Main
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 2
 enter department name :
 Data Science
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 2
 enter department name :
 Infrastructure
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 2
 enter department name :
 IT
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 1
 1) Data Science
 2) Infrastructure
 3) IT
+
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 3
 Enter option to delete :
 3
 dept status after deletion
 1) Data Science
 2) Infrastructure
+
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 5
 Enter the Name of the Member: Gautham
 Enter the Age of the Member: 28
 Enter the College Name: VTU
 Enter the SkillSet: Java
-DS
 SQL
+DS
 
 Add the member to the following dept:
 
 1) Data Science
 2) Infrastructure
+
 Data Science
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 5
 Enter the Name of the Member: Divya
 Enter the Age of the Member: 26
@@ -91,14 +123,36 @@ Add the member to the following dept:
 
 1) Data Science
 2) Infrastructure
+
 Data Science
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
+4
+----------------dept members-------------------------------
+Data Science
+name='Gautham', age=28, college='VTU', skillSet=[Java, SQL, DS]
+name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML]
+Infrastructure : no members
+----------------------------------------------------------
+Press the option (Menu):
+1.	To display all the Departments
+2.	Create a new Department
+3.	Delete a Department
+4.	Display all the Members as per Department
+5.	Create a Member and add the member to the department
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 5
 Enter the Name of the Member: Amit
 Enter the Age of the Member: 25
@@ -111,28 +165,19 @@ Add the member to the following dept:
 
 1) Data Science
 2) Infrastructure
+
 Infrastructure
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
-4
-----------------dept members-------------------------------
-Data Science
-name='Gautham', age=28, college='VTU', skillSet=[Java, DS, SQL]
-name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML]
-Infrastructure
-name='Amit', age=25, college='TMT', skillSet=[Linux, PSQL, Scripting]
-Press the option (Menu):
-1.	To display all the Departments
-2.	Create a new Department
-3.	Delete a Department
-4.	Display all the Members as per Department
-5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 5
 Enter the Name of the Member: Naveen
 Enter the Age of the Member: 22
@@ -145,25 +190,117 @@ Add the member to the following dept:
 
 1) Data Science
 2) Infrastructure
+
 Infrastructure
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
-
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
 4
 ----------------dept members-------------------------------
 Data Science
-name='Gautham', age=28, college='VTU', skillSet=[Java, DS, SQL]
+name='Gautham', age=28, college='VTU', skillSet=[Java, SQL, DS]
 name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML]
 Infrastructure
 name='Amit', age=25, college='TMT', skillSet=[Linux, PSQL, Scripting]
 name='Naveen', age=22, college='DOJO', skillSet=[Chef, AI, React]
+----------------------------------------------------------
 Press the option (Menu):
 1.	To display all the Departments
 2.	Create a new Department
 3.	Delete a Department
 4.	Display all the Members as per Department
 5.	Create a Member and add the member to the department
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
+7
+Enter the skill :
+Java
+Data Science (name='Gautham', age=28, college='VTU', skillSet=[Java, SQL, DS])
+Data Science (name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML])
+----------------------------------------------------------
+Press the option (Menu):
+1.	To display all the Departments
+2.	Create a new Department
+3.	Delete a Department
+4.	Display all the Members as per Department
+5.	Create a Member and add the member to the department
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
+8
+----------------dept members-------------------------------
+Data Science
+name='Gautham', age=28, college='VTU', skillSet=[Java, SQL, DS]
+name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML]
+Infrastructure
+name='Amit', age=25, college='TMT', skillSet=[Linux, PSQL, Scripting]
+name='Naveen', age=22, college='DOJO', skillSet=[Chef, AI, React]
+enter member name
+Divya
+enter new Department name
+Infrastructure
+true
+----------------------------------------------------------
+Press the option (Menu):
+1.	To display all the Departments
+2.	Create a new Department
+3.	Delete a Department
+4.	Display all the Members as per Department
+5.	Create a Member and add the member to the department
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
+4
+----------------dept members-------------------------------
+Data Science
+name='Gautham', age=28, college='VTU', skillSet=[Java, SQL, DS]
+Infrastructure
+name='Amit', age=25, college='TMT', skillSet=[Linux, PSQL, Scripting]
+name='Naveen', age=22, college='DOJO', skillSet=[Chef, AI, React]
+name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML]
+----------------------------------------------------------
+Press the option (Menu):
+1.	To display all the Departments
+2.	Create a new Department
+3.	Delete a Department
+4.	Display all the Members as per Department
+5.	Create a Member and add the member to the department
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
+6
+enter department name :
+Infrastructure
+enter skill to be added :
+IOT
+----------------dept members-------------------------------
+Data Science
+name='Gautham', age=28, college='VTU', skillSet=[Java, SQL, DS]
+Infrastructure
+name='Amit', age=25, college='TMT', skillSet=[Linux, PSQL, Scripting, IOT]
+name='Naveen', age=22, college='DOJO', skillSet=[Chef, AI, React, IOT]
+name='Divya', age=26, college='TGT', skillSet=[Java, NOSQL, ML, IOT]
+----------------------------------------------------------
+Press the option (Menu):
+1.	To display all the Departments
+2.	Create a new Department
+3.	Delete a Department
+4.	Display all the Members as per Department
+5.	Create a Member and add the member to the department
+6.	Add new skill to a department's members
+7.	Search members by skill
+8.	Swap dept of a member
+----------------------------------------------------------
