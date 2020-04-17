@@ -43,8 +43,6 @@ public class Main {
                 default:
                     throw new IllegalStateException("Unexpected value: " + op);
             }
-            if (in.nextLine().equals("quit"))
-                return;
 
         } while (true);
 
